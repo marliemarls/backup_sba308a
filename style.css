@@ -4,6 +4,7 @@ body{
     justify-content: center;
     align-items: center;
     /* background-color: #CC0000; */
+    width: 95vw;
 }
 .pokeList{
     display: grid;
