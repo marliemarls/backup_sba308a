@@ -11,6 +11,16 @@ export async function gettingPokeImg() {
       return response.data;
     })
   );
+  pokeArr.forEach((pokemon) => {
+    const arrOfPoke = pokemon.types.flatMap((obj) => obj.type.nature);
+    const pokeName = pokemon.name;
+    const pokeID = pokemon.id;
+    const upperCase = pokeName[0].toUpperCase() + pokemon.slice(1);
 
+    
+
+
+
+  })
   
 }
