@@ -1,9 +1,9 @@
 # SBA308A-Pokemon-API
 
 ## About The Project
- `marliemarls`, `sba_308A`, `https://www.linkedin.com/in/marliemart/`, `https://github.com/marliemarls/SBA_308A`, `SBA-project`
+ `marliemarls`, `backup_sba308A`, `https://www.linkedin.com/in/marliemart/`, `https://github.com/marliemarls/backup_sba308A`, `SBA-project`
 
-For this project I wanted to create a mini PokeDex with the PokemonAPI. When each Pokemon element is selected, the user should be able to hear the cry as well as see a card of information about the Pokemons type and it's most common moves. 
+w.i.p
 
 ## Technology Stack
 
@@ -27,7 +27,7 @@ This is how to initiate a project via NPM.
 
 * npm
   ```sh
-  npm install vite@latest
+  npm install -y 
   ```
 ### Installation
 
