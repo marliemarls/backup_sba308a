@@ -1,8 +1,7 @@
 import { fetchData } from "./api.js";
 import { gettingPokeImg } from "./pokeImg.js";
-import { testing } from "./audio.js"
+import { searchBtn } from "./searchBtn.js";
 
-const data = fetchData()
-const img = gettingPokeImg()
-
-
+const data = await fetchData();
+const img = await gettingPokeImg();
+const search = await searchBtn()
