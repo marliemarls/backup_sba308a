@@ -12,15 +12,19 @@ export async function gettingPokeImg() {
     })
   );
   pokeArr.forEach((pokemon) => {
-    const arrOfPoke = pokemon.types.flatMap((obj) => obj.type.nature);
+    const arrOfPoke = pokemon.types.flatMap((obj) => obj.type.name);
     const pokeName = pokemon.name;
     const pokeID = pokemon.id;
-    const upperCase = pokeName[0].toUpperCase() + pokemon.slice(1);
+    const upperCase = pokeName[0].toUpperCase() + pokeName.slice(1);
 
-    
+    const newPokeList = document.createElement("p");
+    const pokeInfo = document.createElement("p");
+    const pokeImg = document.createElement("img");
 
-
-
-  })
-  
+    pokeImg.src = pokemon.sprites.front_default;
+    newPokeList.classList.add(...arrOfPoke);
+    pokeInfo.innerHTML = upperCase;
+    newPokeList.append(pokeImg, pokeInfo);
+    pokeDiv.appendChild(newPokeList);
+  });
 }
