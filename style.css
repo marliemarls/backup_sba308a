@@ -1,3 +1,5 @@
+@import url("https://fonts.cdnfonts.com/css/depixel");
+
 body{
     display: flex;
     flex-direction: column;
@@ -5,6 +7,7 @@ body{
     align-items: center;
     /* background-color: #CC0000; */
     width: 95vw;
+    font-family: "DePixel", sans-serif;
 }
 .pokeList{
     display: grid;
@@ -16,8 +19,14 @@ body{
     background-color: rgb(250, 250, 250);
 
 }
+.marliesHeader{
+    text-align: center;
+}
 
 .headerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #CC0000 ;
     width: 100vw;
     text-align: center;
@@ -34,4 +43,16 @@ body{
     outline: none;
     border: none;
     border-radius: 10pt;
+}
+
+.footer{
+    background-color: #CC0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102.5vw;
+    height: 50px;
+}
+.buttonsDiv{
+    margin-left: 5em;
 }

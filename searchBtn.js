@@ -1,5 +1,7 @@
 import { fetchData } from "./api.js";
 
+//this is the search engine functionality file. able to grab one pokemon but not able to grab others.
+
 export async function searchBtn() {
   const data = await fetchData();
   const pokeDiv = document.querySelector(".pokeList");
@@ -11,22 +13,15 @@ export async function searchBtn() {
     })
   );
 
-  pokeArr.forEach(async (pokemon) => {
-    const arrOfPokeTypes = pokemon.types.flatMap((obj) => obj.type.name);
+  pokeArr.forEach((pokemon) => {
     const arrOfPokeNames = pokemon.name;
 
     const btn = document.querySelector(".searchBtn");
     btn.addEventListener("click", (event) => {
       let inputInfo = document.querySelector(".searchBar").value;
-      let pokeCards = document.querySelector(`#${inputInfo}`);
-
-      if (pokeCards && event) {
-        pokeDiv.innerHTML = "";
-        pokeDiv.append(pokeCards);
-        inputInfo = "";
-        console.log(inputInfo)
-      }
-      console.log(inputInfo);
+      let pokeCards = document.querySelector("#" + inputInfo);
+      pokeDiv.innerHTML = "";
+      pokeDiv.append(pokeCards);
     });
   });
 }

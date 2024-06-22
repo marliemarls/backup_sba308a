@@ -3,7 +3,7 @@
 ## About The Project
  `marliemarls`, `backup_sba308A`, `https://www.linkedin.com/in/marliemart/`, `https://github.com/marliemarls/backup_sba308A`, `SBA-project`
 
-w.i.p
+Created a pokemon search engine that shows the pokemon name that the user inputs into the search bar. Worked with [Pokemon Api] to fetch data to use for this project. 
 
 ## Technology Stack
 
@@ -42,3 +42,4 @@ This is how to initiate a project via NPM.
 [JS]: https://www.javascript.com/
 [CSS]: https://www.w3.org/Style/CSS/Overview.en.html
 [VSCode]: https://code.visualstudio.com/
+[Pokemon Api]: https://pokeapi.co/
