@@ -13,15 +13,18 @@ export async function searchBtn() {
     })
   );
 
-  pokeArr.forEach((pokemon) => {
-    const arrOfPokeNames = pokemon.name;
-
-    const btn = document.querySelector(".searchBtn");
+      const btn = document.querySelector(".searchBtn");
     btn.addEventListener("click", (event) => {
+      event.preventDefault()
       let inputInfo = document.querySelector(".searchBar").value;
       let pokeCards = document.querySelector("#" + inputInfo);
+      if(pokeCards) {
       pokeDiv.innerHTML = "";
       pokeDiv.append(pokeCards);
+      }
+      else{
+        console.log("Invalid input!")
+      }
     });
-  });
+
 }
